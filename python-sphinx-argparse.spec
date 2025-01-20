@@ -9,7 +9,7 @@ BuildArch: noarch
 
 License: MIT
 Url: https://github.com/ashb/sphinx-argparse
-Source0: https://files.pythonhosted.org/packages/source/s/sphinx-argparse/sphinx-argparse-%{version}.tar.gz
+Source0: https://files.pythonhosted.org/packages/source/s/sphinx-argparse/sphinx_argparse-%{version}.tar.gz
 
 BuildRequires: python3-devel
 BuildRequires: python3.11dist(lxml)
