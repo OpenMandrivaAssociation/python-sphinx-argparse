@@ -25,3 +25,5 @@ Sphinx extension that automatically documents argparse commands and options
 %files
 %license LICENCE.rst
 %doc README.rst
+%{python3_sitelib}/sphinx_argparse-%{version}.dist-info
+%{python3_sitelib}/sphinxarg/
