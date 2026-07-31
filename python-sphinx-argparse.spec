@@ -2,8 +2,8 @@
 %global srcname sphinx_argparse
 
 Name: python-%{upname}
-Version: 0.5.2
-Release: 2
+Version: 0.6.0
+Release: 1
 Summary: Sphinx extension that automatically documents argparse commands and options
 BuildArch: noarch
 
@@ -20,7 +20,7 @@ BuildSystem: python
 Sphinx extension that automatically documents argparse commands and options
 
 %prep
-%autosetup -n %{srcname}-%{version} -p1
+%autosetup -n sphinx_argparse-0.6.0 -p1
 
 %files
 %license LICENCE.rst
