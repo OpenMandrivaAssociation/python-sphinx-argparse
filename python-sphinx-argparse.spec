@@ -2,17 +2,20 @@
 %global srcname sphinx_argparse
 
 Name: python-%{upname}
-Version: 0.6.0
+Version: 0.6.1
 Release: 1
 Summary: Sphinx extension that automatically documents argparse commands and options
 BuildArch: noarch
 
 License: MIT
+Group: Development/Python
 Url: https://github.com/ashb/sphinx-argparse
 Source0: https://files.pythonhosted.org/packages/source/s/sphinx-argparse/sphinx_argparse-%{version}.tar.gz
 
-BuildRequires: python3-devel
-BuildRequires: python3dist(lxml)
+BuildRequires: pkgconfig(python3)
+BuildRequires: python%{pyver}dist(pip)
+BuildRequires: python%{pyver}dist(wheel)
+BuildRequires: python%{pyver}dist(flit-core)
 
 BuildSystem: python
 
@@ -20,10 +23,10 @@ BuildSystem: python
 Sphinx extension that automatically documents argparse commands and options
 
 %prep
-%autosetup -n sphinx_argparse-0.6.0 -p1
+%autosetup -n sphinx_argparse-%{version} -p1
 
 %files
-%license LICENCE.rst
+%license LICENSE.rst
 %doc README.rst
 %{python3_sitelib}/sphinx_argparse-%{version}.dist-info
 %{python3_sitelib}/sphinxarg/
